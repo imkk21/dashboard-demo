@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import TopBar from './components/TopBar';
+import OverviewCards from './components/OverviewCards';
+import OrdersTable from './components/OrdersTable';
+import SalesChart from './components/SalesChart';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <div className="flex">
+    <Sidebar />
+    <div className="flex-1 p-6">
+      <TopBar />
+      <OverviewCards />
+      <div className="grid grid-cols-2 gap-4">
+        <OrdersTable />
+        <SalesChart />
+      </div>
     </div>
-  );
-}
+  </div>
+);
 
 export default App;
