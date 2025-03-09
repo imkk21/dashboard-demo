@@ -1,0 +1,23 @@
+.top-bar {
+    background-color: #ffffff;
+    color: #2c3e50;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-bar h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .top-bar h1 {
+      font-size: 1.5rem;
+    }
+  }
